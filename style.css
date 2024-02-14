@@ -1,0 +1,323 @@
+@charset "UTF-8";
+
+
+body{
+    background-color: #f0fcff;
+}
+/* ラッパー */
+
+div#wrapper{
+    max-width: 1440px;
+    height: auto;
+    margin:50px auto 70px auto;
+    position:relative
+}
+
+/* ヘッダー */
+header{
+    width: 1410px;
+    height: 75px;
+    display: flex;
+    background-color: #f0fcff;
+}
+
+header div{
+    margin-right: 50px;
+}
+
+.centerlogo{
+    margin-top: 35px;
+}
+
+.contents{
+    display: flex;
+    max-width: 1410px;
+    justify-content: space-between;
+    margin: 50px 0 70px 0; 
+}
+
+h2{
+    position: absolute;
+    right: 20px;
+    top: -60px;
+}
+
+h2 img{
+    width: auto;
+    height: 20rem;
+}
+
+/* グローバルナビ */
+aside{
+    width: 200px;
+    height: 600px;
+    position: sticky;
+    margin-right: 30px;
+}
+
+aside nav #mainmenu{
+    margin-bottom: 70px;
+}
+
+#mainmenu li{
+    margin-bottom: 40px;
+    padding: 5px 0 0 0;
+    border-radius: 3px;
+}
+#mainmenu li:hover{
+    box-shadow: 2px 1px #b2b5b8;
+    border-radius: 3px;
+}
+
+#here{
+    background-color: rgba(236,229,199,0.7);
+}
+
+#sns li{
+    font-size: 12px;
+    text-align: right;
+    font-family: "メイリオ" "Meiryo";
+    margin-bottom: 15px;
+}
+#sns li:hover{
+    color: rgb(148, 116, 12);
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+#arrange img{
+    width: 90%;
+    margin:100px 30px;
+}
+
+/* メイン画像 */
+div#main_image{
+    width: 1110px;
+    height: 300px;
+    background-color: rgb(247, 199, 96);
+    margin-bottom: 30px;
+    margin-top: 70px;
+}
+
+/* 下部 */
+#container{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "メイリオ","Meiryo";
+    color: #254259;
+    margin-top: 30px;
+}
+
+/* 最新情報と一部動画共通css */
+div#left, #right{
+    width: 540px;
+    height: 300px;
+    background-color: white;
+    box-shadow: 0 2px 7px rgb(216, 214, 214);
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+div#left{
+    margin-right: 30px;
+}
+
+div .title, .title2{
+    display: flex;
+}
+.title span{
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 10px;
+    padding-top: 10px;
+    font-family: "メイリオ","Meiryo";
+    color: #354259;
+}
+
+#left li{
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 35px;
+    display: inline-block;
+}
+#left li:hover{
+    font-weight: bold;
+}
+
+#container ul{
+    margin-left: 30px;
+}
+#container ul span{
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+/* 動画 */
+div#right{
+    width: 500px;
+    height: 300px;
+}
+
+iframe{
+    margin: 0 35px 5px 35px;
+    position: relative;
+}
+
+
+/* フッター */
+footer{
+    width: 100%;
+    height: 70px;
+    background-color: #354259;
+}
+
+.footer_inner{
+    width: 960px;
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+    position: relative;
+}
+
+#footer_image{
+    position: absolute;
+    top: -38px;
+    right: -50px;}
+
+#footer_text{
+    line-height:70px;
+}
+footer p{
+    text-align: center;
+    color: #f0fcff;
+}
+
+/* ------------ここまでHOME--------------------------------------- */
+
+
+/* ------------ここからABOUT--------------------------------------- */
+
+#contents2{
+    margin: 30px auto;
+    margin-left: 30px;
+    font-family: "メイリオ";
+    color: #354259;
+}
+
+.title2 span{
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 10px;
+    font-family: "メイリオ","Meiryo";
+    color: #354259;
+}
+
+.box{
+    margin: 40px 50px;
+    display: flex;
+    font-size: 14px;
+    line-height: 25px;
+}
+.box img{
+    width: 38%;
+    margin: 10px;
+}
+
+#img2{
+    display: flex;
+    justify-content: center;
+}
+
+#img2 img{
+    margin: 15px;
+}
+
+/* ------------ここまでABOUT--------------------------------------- */
+
+/* ------------ここからinformation--------------------------------------- */
+form {
+    margin-left: 50px;
+}
+form div{
+margin-bottom: 14px;
+}
+
+#date{
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(112, 42, 42);
+    text-align: center;
+    background-color: #ece5c7;
+    border-radius: 20px;
+    width: 80%;
+    padding: 20px;
+    margin:30px auto;
+}
+
+#date span{
+    letter-spacing: 3px;
+
+}
+
+label{
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    display: block;
+}
+input[type="text"], input[type="email"], #message{
+    background-color: rgba(255,255,255,.5);
+    border: 1px #ffffff outset;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+input[type="text"],input[type="email"]{
+    width: 100%;
+    max-width: 240px;
+}
+
+textarea{
+    width: 100%;
+    max-width: 480px;
+    height: 6rem;
+    display: block;
+}
+
+input[type="submit"]{
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-color: #233658;
+    cursor:pointer;
+    line-height: 14px;
+    padding: 15px;
+
+}
+
+/* ------------ここまでinformation--------------------------------------- */
+
+/* ------------ここまでコンタクト--------------------------------------- */
+
+.contact{
+    display: flex;
+    margin: 30px;
+}
+
+.contact div{
+    margin-right: 30px;
+    letter-spacing: 2px;
+}
+
+/* ------------ここからコンタクト--------------------------------------- */
